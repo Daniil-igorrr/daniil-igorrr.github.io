@@ -2,50 +2,85 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2; /* Светло-серый фон */
+    color: #333;
     text-align: center;
 }
 
-header {
-    background: #323f3f;
-    color: white;
+.container {
+    max-width: 600px;
+    margin: 40px auto;
     padding: 20px;
-    font-size: 1.2em;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.3em;
+    font-weight: normal;
+    color: #555; /* Чуть темнее для контраста */
 }
 
 .profile-pic img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 3px solid #323f3f;
-    margin-top: 20px;
-    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
 }
 
-.profile-pic img:hover {
-    transform: scale(1.1);
+.intro {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
-section {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
+h3 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    color: #444; /* Тёмно-серый заголовок */
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.highlight {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding-left: 15px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2b6cb0; /* Синий акцент */
+}
+
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
