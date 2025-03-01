@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeoPixi - Портфолио</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Portafolio de Daniil</title>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Daniil Kotelevets</h1>
+        <h2>Ayudante de cocina | Camarero | Barman</h2>
+    </header>
 
-<header>
-    <h1>NeoPixi</h1>
-    <h2>Привет, меня зовут <strong>Даниил Котелевец</strong></h2>
-    <p>Опыт работы в сфере ресторанного бизнеса. Готов к новым вызовам.</p>
-</header>
+    <section id="about">
+        <div class="profile-pic">
+            <img src="/static/img/my_photo.jpg" alt="Foto de Daniil">
+        </div>
+        <p>
+            Joven entusiasta, responsable y trabajador, con experiencia en el sector de la hostelería.
+            Destaco por mi rapidez de aprendizaje, capacidad para adaptarme a diferentes funciones y ofrecer
+            un servicio al cliente de alta calidad.
+        </p>
+    </section>
 
-<section class="images">
-    <img src="assets/images/image1.jpg" alt="Фото 1">
-    <img src="assets/images/image2.jpg" alt="Фото 2">
-    <img src="assets/images/image3.jpg" alt="Фото 3">
-</section>
+    <section id="experience">
+        <h3>Experiencia Laboral</h3>
+        <p><strong>Cadena de Cafeterías "Kur Krilo" (Junio 2023 - Agosto 2023)</strong></p>
+        <ul>
+            <li>Preparación y montaje de platos según recetas establecidas.</li>
+            <li>Atención al cliente, toma de pedidos y servicio en mesa.</li>
+            <li>Elaboración de bebidas y cócteles básicos.</li>
+            <li>Mantenimiento del orden y limpieza en la zona de trabajo.</li>
+        </ul>
+    </section>
 
-<section class="skills">
-    <h3>Что умею</h3>
-    <ul>
-        <li>Обслуживание клиентов</li>
-        <li>Работа в команде</li>
-        <li>Быстрая адаптация</li>
-        <li>Приготовление напитков и коктейлей</li>
-    </ul>
-</section>
+    <section id="skills">
+        <h3>Habilidades</h3>
+        <ul>
+            <li>Atención al cliente y comunicación efectiva</li>
+            <li>Trabajo en equipo y bajo presión</li>
+            <li>Rapidez en la toma de decisiones</li>
+            <li>Capacidad de aprendizaje y adaptación rápida</li>
+            <li>Responsabilidad, puntualidad y organización</li>
+        </ul>
+    </section>
 
-<section class="contact">
-    <h3>Связь со мной</h3>
-    <form>
-        <input type="text" name="name" placeholder="Имя" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-        <button type="submit">Отправить</button>
-    </form>
-</section>
+    <section id="contact">
+        <h3>Contacto</h3>
+        <p>📍 San Juan de Alicante, España</p>
+        <p>📞 Teléfono: <a href="tel:+34698996086">+34 698 996 086</a></p>
+        <p>📧 Email: <a href="mailto:dkotelevets2007@gmail.com">dkotelevets2007@gmail.com</a></p>
+    </section>
 
-<footer>
-    <p>Telegram: @dkotelevets | Email: dkotelevets2007@gmail.com</p>
-</footer>
-
-<script src="assets/script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
