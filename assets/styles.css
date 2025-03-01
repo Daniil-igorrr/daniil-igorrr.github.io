@@ -84,3 +84,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.logo {
+    width: 50px;  /* Размер логотипа */
+    height: auto;
+    margin-bottom: 10px;
+}
